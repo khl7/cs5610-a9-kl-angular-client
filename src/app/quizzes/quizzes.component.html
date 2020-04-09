@@ -11,6 +11,14 @@
       >
         Start
       </a>
+      <br />
+
+      Number of attempts: {{ quiz.attempts.length }}
+      <ul>
+        <li *ngFor="let attempt of quiz.attempts">
+          Score: {{ attempt.score }}%
+        </li>
+      </ul>
     </li>
   </ul>
 </div>
