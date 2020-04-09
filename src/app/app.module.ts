@@ -7,6 +7,7 @@ import { CourseTableComponent } from './course-table/course-table.component';
 import {CourseServiceClient} from './services/CourseServiceClient';
 import {QuestionServiceClient} from './services/QuestionServiceClient';
 import {QuizServiceClient} from './services/QuizzesServiceClient';
+import {QuizzesAttemptsServiceClient} from './services/QuizzesAttemptsServiceClient';
 import {FormsModule} from '@angular/forms';
 import { CourseViewerComponent } from './course-viewer/course-viewer.component';
 import { ModuleListComponent } from './module-list/module-list.component';
@@ -40,7 +41,8 @@ import { MultipleChoiceQuestionComponent } from './multiple-choice-question/mult
     ModuleServiceClient,
     LessonServiceClient,
     QuizServiceClient,
-    QuestionServiceClient
+    QuestionServiceClient,
+    QuizzesAttemptsServiceClient
 
   ],
   bootstrap: [AppComponent]
