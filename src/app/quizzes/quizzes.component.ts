@@ -37,7 +37,7 @@ export class QuizzesComponent implements OnInit {
         .then((attemptPromises) => {
           return Promise.all(attemptPromises);
         })
-        .then((attempts) => {
+        .then((attempts: any[]) => {
           console.log(attempts);
           for (let i = 0; i < this.quizzes.length; i++) {
             this.quizzes[i].attempts = attempts[i];
