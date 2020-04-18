@@ -30,7 +30,7 @@ export class QuizzesComponent implements OnInit {
           this.quizzes = quizzes;
           return quizzes.map((quiz) => {
             return fetch(
-              `http://localhost:3000/api/quizzes/${quiz._id}/attempts`
+              `https://cs5610-sp20-kl-node-server.herokuapp.com/api/quizzes/${quiz._id}/attempts`
             ).then((response) => response.json());
           });
         })
